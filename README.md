@@ -6,11 +6,9 @@ Core library of the Mintay SRS (Spaced Repetition System) engine.
 
 This package provides the core functionality and types for the Mintay SRS engine, a system designed to optimize learning and memory retention using spaced repetition techniques.
 
-## Installation
+## WIP
 
-```bash
-npm install @mintay/core
-```
+Work in progress. Right now this library is not ready for production use yet.
 
 ## Scripts
 
