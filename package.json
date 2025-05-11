@@ -13,11 +13,12 @@
 		"test:mutate": "stryker run",
 		"test": "vitest",
 		"test:ss": "vitest -u",
-		"prepare": "husky",
+		"init": "husky",
 		"build": "tsc",
 		"build:check": "tsc --noEmit",
 		"fix": "npm run format:fix && npm run lint:fix",
-		"pre-commit-check": " npm run build:check && npm run lint && npm run format:check && npm run test"
+		"pre-commit-check": " npm run build:check && npm run lint && npm run format:check && npm run test",
+		"prepare": "npm run build && npm run lint && npm run format:check && npm run test"
 	},
 	"author": "teawithsand",
 	"license": "AGPL-3.0-only",
@@ -46,5 +47,10 @@
 		"immer": "^10.1.1",
 		"ts-fsrs": "^4.7.1",
 		"zod": "^3.24.3"
-	}
+	},
+	"files": [
+		"dist",
+		"LICENSE",
+		"README.md"
+	]
 }
